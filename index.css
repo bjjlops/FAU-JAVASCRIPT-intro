@@ -1,0 +1,166 @@
+/*General body styling*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(45deg, #e3f2fd 25%, transparent 25%, transparent 75%, #e3f2fd 75%, #e3f2fd);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+/*Animation for the wave effect*/
+@keyframes wave {
+    0%, 100% {
+
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/*Apply the wave animation to each letter*/
+.wave {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+/*Staggered waving animation for each letter of the header on page*/
+.wave:nth-child(1) { animation-delay: 0.1s; }
+.wave:nth-child(2) { animation-delay: 0.2s; }
+.wave:nth-child(3) { animation-delay: 0.3s; }
+.wave:nth-child(4) { animation-delay: 0.4s; }
+.wave:nth-child(5) { animation-delay: 0.5s; }
+.wave:nth-child(6) { animation-delay: 0.6s; }
+.wave:nth-child(7) { animation-delay: 0.7s; }
+.wave:nth-child(8) { animation-delay: 0.8s; }
+.wave:nth-child(9) { animation-delay: 0.9s; }
+.wave:nth-child(10) { animation-delay: 1s; }
+
+/*Mathematical symbols overall*/
+.mathSymbol {
+    position: fixed;
+    font-size: 100px;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+/*Bottom left: Multiplication*/
+.bottomLeftSymbol {
+    bottom: 10%;
+    left: 25%;
+    color: blue;
+}
+
+/*Middle right: Division*/
+.middleRightSymbol {
+    top: 40%;
+    right: 15%;
+    color: blue;
+}
+
+/*Bottom right: Summation*/
+.bottomRightSymbol {
+    bottom: 10%;
+    right: 25%;
+    color: blue;
+}
+
+/*Middle left: Square root*/
+.middleLeftSymbol {
+    top: 35%;
+    left: 10%;
+    color: blue;
+}
+
+/*Factorial symbol*/
+.factorialSymbol {
+    top: 75%;
+    right: 80%;
+    color: blue;
+}
+
+/*Header Section Styles*/
+#headerSection {
+    background-color: #007bff;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+#headerSection h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#headerSection p {
+    font-size: 1.2rem;
+}
+
+/*Input Section Styles*/
+#inputSection {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#inputSection h2 {
+    color: #007bff;
+}
+
+#numbersInput {
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+/*results*/
+#resultsSection {
+    background-color: #e9ecef;
+    padding: 50px 0;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #007bff;
+}
+
+ul.list-group {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.text-danger {
+    font-size: 14px;
+    color: red;
+}
+
+/*Hide result container by default*/
+#resultContainer {
+    display: none;
+}

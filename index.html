@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMMMMR APP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!--Multiplication symbol bottom left-->
+    <div class="mathSymbol bottomLeftSymbol">
+        &#215; 
+    </div>
+
+    <!--Division symbol middle right-->
+    <div class="mathSymbol middleRightSymbol">
+        &#247;
+    </div>
+
+    <!--Summation symbol bottom right-->
+    <div class="mathSymbol bottomRightSymbol">
+        &#8721; 
+    </div>
+
+    <!--Square root symbol middle left next to textbox-->
+    <div class="mathSymbol middleLeftSymbol">
+        &#8730; 
+    </div>
+
+    <!--actorial symbol (x!)-->
+    <div class="mathSymbol factorialSymbol">
+        x&#33; 
+    </div>
+
+    <!--Header Section with Wave effect-->
+    <section id="headerSection" class="text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 hoverTitle">
+                <span class="wave">M</span>
+                <span class="wave">M</span>
+                <span class="wave">M</span>
+                <span class="wave">M</span>
+                <span class="wave">M</span>
+                <span class="wave">R</span>
+                <span class="wave"><!--Space--> </span>
+                <span class="wave">A</span>
+                <span class="wave">P</span>
+                <span class="wave">P</span>
+            </h1>
+            <p class="lead">Calculate Mean, Median, Mode, Min, Max, and Range</p>
+        </div>
+    </section>
+
+    <!--Input Section-->
+    <section id="inputSection" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Enter Your Data</h2>
+            <div class="formGroup position-relative">
+                <label for="numbersInput">Enter numbers separated by commas:</label>
+                <input type="text" id="numbersInput" class="form-control" placeholder="e.g., 10, 20, 30, 40">
+                <div id="errorMessage" class="text-danger mt-2"></div>
+            </div>
+            <button onclick="performAnalysis()" class="btn btn-primary mt-3">Calculate</button>
+        </div>
+    </section>
+
+    <!--Results Container Section-->
+    <section id="resultsSection" class="bg-light py-5" style="display: none;">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Results</h3>
+                    <ul id="resultsList" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
